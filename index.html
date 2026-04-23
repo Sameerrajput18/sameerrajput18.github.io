@@ -1,119 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sameer Singh | Cybersecurity Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Singh | Cybersecurity Portfolio</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- Particle.js Background -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Particle.js Background -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    background: #02040f;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-}
+    <style>
+        /* [ANTI-COPY CSS] */
+        * {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none;     /* IE/Edge */
+            user-select: none;         /* Standard */
+            -webkit-touch-callout: none; /* iOS Safari */
+        }
 
-#particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    top: 0;
-    left: 0;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            background: #02040f;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
 
-.container {
-    width: 85%;
-    max-width: 900px;
-    margin: auto;
-    padding-top: 60px;
-}
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
 
-/* HEADER */
-h1 {
-    text-align: center;
-    font-size: 45px;
-    font-weight: 700;
-    margin-bottom: 0;
-    color: #00d4ff;
-    text-shadow: 0px 0px 15px #00eaff;
-}
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: auto;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
 
-.subtitle {
-    text-align: center;
-    margin-top: 5px;
-    font-size: 18px;
-    opacity: 0.8;
-}
+        /* HEADER */
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: #00d4ff;
+            text-shadow: 0px 0px 15px #00eaff;
+        }
 
-/* SECTION HEADINGS */
-.section-title {
-    margin-top: 40px;
-    font-size: 30px;
-    font-weight: 600;
-    color: #00c8ff;
-    border-left: 4px solid #00eaff;
-    padding-left: 10px;
-}
+        .subtitle {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
 
-/* SKILL GRID */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-    margin-top: 20px;
-}
+        /* SECTION HEADINGS */
+        .section-title {
+            margin-top: 40px;
+            font-size: 30px;
+            font-weight: 600;
+            color: #00c8ff;
+            border-left: 4px solid #00eaff;
+            padding-left: 10px;
+        }
 
-.skill {
-    background: rgba(0, 170, 255, 0.1);
-    padding: 10px 12px;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid rgba(0, 200, 255, 0.4);
-    transition: 0.3s;
-    font-size: 14px;
-}
+        /* SKILL GRID */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
 
-.skill:hover {
-    transform: translateY(-5px);
-    background: rgba(0, 200, 255, 0.3);
-    box-shadow: 0px 0px 12px #00eaff;
-}
+        .skill {
+            background: rgba(0, 170, 255, 0.1);
+            padding: 10px 12px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(0, 200, 255, 0.4);
+            transition: 0.3s;
+            font-size: 14px;
+        }
 
-/* PROJECT CARDS */
-.project {
-    background: rgba(255, 255, 255, 0.06);
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 12px;
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    transition: 0.3s;
-}
+        .skill:hover {
+            transform: translateY(-5px);
+            background: rgba(0, 200, 255, 0.3);
+            box-shadow: 0px 0px 12px #00eaff;
+        }
 
-.project:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 0px 15px #00eaff;
-}
+        /* PROJECT CARDS */
+        .project {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            transition: 0.3s;
+        }
 
-/* CONTACT */
-.contact a {
-    color: #00eaff;
-    text-decoration: none;
-}
+        .project:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 15px #00eaff;
+        }
 
-.contact a:hover {
-    text-decoration: underline;
-}
-</style>
+        /* CONTACT */
+        .contact a {
+            color: #00eaff;
+            text-decoration: none;
+            /* Links should be clickable/copyable if you want, 
+               but for total lock, we keep them protected too */
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
+<body oncontextmenu="return false;"> <!-- Disabled Right Click -->
 
 <div id="particles-js"></div>
 
@@ -178,29 +190,45 @@ h1 {
 
 </div>
 
-<!-- PARTICLE JS CONFIG -->
+<!-- SCRIPTS -->
 <script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": {"value": 120},
-    "color": {"value": "#00eaff"},
-    "shape": {"type": "circle"},
-    "opacity": {"value": 0.5},
-    "size": {"value": 3},
-    "line_linked": {
-      "enable": true,
-      "distance": 140,
-      "color": "#00eaff",
-      "opacity": 0.4,
-      "width": 1.2
-    },
-    "move": {
-      "speed": 2,
-      "direction": "none",
-      "out_mode": "bounce"
-    }
-  }
-});
+    // Particle.js Config
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {"value": 120},
+        "color": {"value": "#00eaff"},
+        "shape": {"type": "circle"},
+        "opacity": {"value": 0.5},
+        "size": {"value": 3},
+        "line_linked": {
+          "enable": true,
+          "distance": 140,
+          "color": "#00eaff",
+          "opacity": 0.4,
+          "width": 1.2
+        },
+        "move": {
+          "speed": 2,
+          "direction": "none",
+          "out_mode": "bounce"
+        }
+      }
+    });
+
+    // [ANTI-COPY JAVASCRIPT]
+    document.addEventListener('keydown', function(e) {
+        // Block Ctrl+C, Ctrl+V, Ctrl+U, Ctrl+S, Ctrl+A, F12
+        if (
+            e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'u' || e.key === 's' || e.key === 'a' || e.key === 'i' || e.key === 'j') ||
+            e.key === 'F12'
+        ) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // Disable dragging of elements
+    document.ondragstart = function() { return false; };
 </script>
 
 </body>
